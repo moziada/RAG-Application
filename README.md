@@ -36,3 +36,7 @@ To run the application, follow these steps:
 5. Run `create_database.py` script to chunk and store your PDF documents into Pinecone vector database.
 
 6. Run `app.py` script to run the Gradio based application.
+
+Here’s an example of the app answering questions based on the context of the [SS4Rec](https://arxiv.org/abs/2502.08132) paper.
+
+!["app screenshot"](./imgs/app-screenshot.png)
