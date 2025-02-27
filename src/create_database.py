@@ -32,11 +32,10 @@ def split_documuments(docs: list):
 docs = load_documuments(DOCS_PATH)
 # 2. Document Split
 split_docs = split_documuments(docs)
-# 3. Embedding model
-embedding_model = utils.get_embedding_model()
-# 4. Store Embeddings in VectoreStore
+# 3. Create VectoreStore Index
 utils.create_vectorstore_index()
 vectorstore = utils.get_vectorstore()
+# 4. Embed & Store Docs in VectoreStore
 vectorstore.add_documents(split_docs)
 
 print(f"Saved {len(split_docs)} chunks to pinecone database")
