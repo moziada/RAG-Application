@@ -14,10 +14,10 @@ def rag_interface(query):
 
 with gr.Blocks() as demo:
     gr.Markdown("# RAG-based Question Answering")
-    with gr.Row():
+    with gr.Column():
         query_input = gr.Textbox(label="Enter your query:")
         submit_button = gr.Button("Ask")
-    response_output = gr.Textbox(label="Response", interactive=False)
+        response_output = gr.Textbox(label="Response", interactive=False, lines=10)
     
     submit_button.click(rag_interface, inputs=[query_input], outputs=[response_output])
 
