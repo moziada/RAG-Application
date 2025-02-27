@@ -4,6 +4,8 @@
 
 This project is an application of a Retrieval-Augmented Generation (RAG) system designed to retrieve and generate answers from PDFs. It leverages Pinecone as a vector database for semantic search and Groq as an LLM service for answer generation. A user-friendly Gradio-based GUI is provided to simplify querying and retrieving relevant information.
 
+!["RAG Architecture"](./imgs/rag-architecture.png)
+
 ## Usage
 
 To run the application, follow these steps:
